@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: discovery-client
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+    consul:
+      host: localhost
+      port: 8500
